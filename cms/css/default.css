@@ -1,0 +1,285 @@
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+a, a:visited {
+	color:#046;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+a.linkNormal
+{
+	color:#333;
+	text-decoration:none;
+}
+a.linkNormal:active {
+	text-decoration:none;
+}
+a.linkNormal:hover {
+	text-decoration:none;
+}
+h1
+{
+	color:#048;
+	text-align:left;
+	padding:10px;
+	letter-spacing:2px;
+	font-size:130%;
+}
+h2
+{
+	color:#046;
+	text-align:left;
+	padding:10px;
+	letter-spacing:1px;
+	font-size:90%;
+}
+form{
+	width:700px;
+	text-align:left;
+}
+legend{
+	color:#046;
+	padding-right:6px;
+	padding-left:6px;
+	text-align:center;
+	margin-left:25px;
+}
+fieldset
+{
+	border:1px solid #ccc;
+}
+input {
+	text-align:left;
+	width:250px;
+}
+input[type=checkbox] {
+	text-align:left;
+	width:auto;
+}
+textarea
+{
+	width:250px;
+	height:200px;
+}
+select
+{
+	width:255px;
+}
+.bottom
+{
+	background:url(images/barraBottom.png) repeat-x;
+	text-align:center;
+	vertical-align:middle;
+	height:100px;
+}
+.top
+{
+	background:url(images/barraTop.png) repeat-x;
+	text-align:center;
+	vertical-align:middle;
+	height:100px;
+}
+#form_submit {
+	width: 97px;
+	height: 31px;
+	color: #666666;
+	background-repeat: no-repeat;
+	background-image: url(images/admin_login_button.png);
+	background-color: transparent;
+	border: none;
+	background-position: left top;
+	overflow: visible;
+	cursor:pointer;
+	cursor:hand;
+	text-align:center;
+}
+
+#form_submit:hover {
+	background-position: left -33px;
+}
+
+#form_submit:focus {
+	background-position: left -66px;
+}
+.boxUsuario
+{
+	background-image: url(images/fundoBoxUsuario.png);
+	background-repeat: no-repeat;
+	width:290px;
+	height:98px;
+	color:#FFFFFF;
+	font-weight:bold;
+	letter-spacing:1px;
+	font-size:95%;
+}
+#none
+{
+	font-size: 12px;
+	margin: 0px;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+#gradient-style
+{
+	font-size: 12px;
+	margin: 10px;
+	width: 98%;
+	text-align: left;
+	border-collapse: collapse;
+	border:1px solid #033;
+}
+#gradient-style th
+{
+	font-size: 110%;
+	font-weight: bold;
+	padding: 8px;
+	background: url('images/gradhead.png') repeat-x;
+	background-position:center;
+	border-bottom: 1px solid #033;
+	color: #FFFFFF;
+	height:24px;
+}
+#gradient-style td
+{
+	height:24px;
+	border-top: 1px solid #fff;
+	padding: 6px;
+	color: #333;
+	background: #F0F0F0;/*url('images/gradback.png') repeat-x;*/
+}
+#gradient-style tr:hover td
+{
+	background: #CDCDCD;
+	color: #333;
+}
+.avisoCamposObrigatorios
+{
+	text-align:right;
+	font-size:11px;
+	letter-spacing:1px;
+	color:#333
+}
+#detalhes
+{
+	font-size: 12px;
+	margin: 10px;
+	width: 98%;
+	text-align: left;
+	border-collapse: collapse;
+}
+#detalhes th
+{
+	font-size: 110%;
+	font-weight: bold;
+	padding: 8px;
+	background: url('images/gradhead.png') repeat-x;
+	border-bottom: 1px solid #fff;
+	color: #FFFFFF;
+}
+#detalhes td
+{
+	padding: 8px;
+	border-bottom: 1px solid #fff;
+	color: #333;
+	border-top: 1px solid #fff;
+	background: url('images/gradback.png') repeat-x;
+}
+#interno
+{
+	font-size: 12px;
+	margin: 0px;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+#interno td
+{
+	padding: 10px;
+	border-bottom: 1px solid #fff;
+	color: #333;
+	border-top: 1px solid #fff;
+	background: url('images/gradback.png') repeat-x;
+}
+.app_botao {
+	width: 152px;
+	height: 32px;
+	line-height:32px;
+	vertical-align:middle;
+	letter-spacing:2px;
+	color: #046;
+	background-repeat: no-repeat;
+	background-image: url(images/bg_botao.png);
+	background-color: transparent;
+	border: none;
+	cursor:pointer;
+	cursor:hand;
+	text-align:left;
+	font-weight:bold;
+}
+
+.app_botao:hover {
+	width: 152px;
+	height: 32px;
+	line-height:32px;
+	vertical-align:middle;
+	letter-spacing:2px;
+	color:#048;
+	background-repeat: no-repeat;
+	background-image: url(images/bg_botao_hover.png);
+	background-color: transparent;
+	border: none;
+	cursor:pointer;
+	cursor:hand;
+	text-align:left;
+	font-weight:bold;
+}
+.icone_botao
+{
+	margin-left:5px;
+	vertical-align:middle;
+	line-height:32px;
+	padding:4px;
+}
+#gradient-style-detalhes
+{
+	font-size: 12px;
+	margin: 10px;
+	width: 98%;
+	text-align: left;
+	border-collapse: collapse;
+	border:1px solid #033;
+}
+#gradient-style-detalhes th
+{
+	font-size: 110%;
+	font-weight: bold;
+	padding: 8px;
+	background: url('images/gradhead.png') repeat-x;
+	background-position:center;
+	border-bottom: 1px solid #033;
+	color: #FFFFFF;
+	height:24px;
+}
+#gradient-style-detalhes td
+{
+	height:24px;
+	border-top: 1px solid #fff;
+	padding: 6px;
+	color: #333;
+	background: #F0F0F0;/*url('images/gradback.png') repeat-x;*/
+}
+
+/* CADASTRO E EDIÇÃO DAS PÁGINAS */
+#ordemPag {list-style:none;}
+#ordemPag li{float:left; margin:5px; padding:10px 10px 0 10px; border:1px solid #000; text-align:center; background-color:#fff;}
+#ordemPag li div a{float:left; margin:5px 17px;}
+#ordemPag li div a img{border:none;}

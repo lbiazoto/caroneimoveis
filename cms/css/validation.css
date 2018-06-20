@@ -1,0 +1,47 @@
+.none
+{
+	height:40px;
+	line-height:40px;
+	background: none;
+	border:1px solid #FFFFFF;
+	z-index:1;
+	width:300px;
+}
+.obrigatorio
+{
+	height:40px;
+	line-height:40px;
+	background: url(images/fundo_obrigatorio.png) repeat-x;
+	border:1px solid #E9B007;/*#FFDD56*/
+	z-index:1;
+	width:300px;
+	font-size:90%;
+}
+.correto
+{
+	height:40px;
+	line-height:40px;
+	background: url(images/fundo_correto.png) repeat-x;
+	border:1px solid #336600;
+	z-index:1;
+	width:300px;
+	font-size:90%;
+}
+.errado
+{
+	height:40px;
+	line-height:40px;
+	background: url(images/fundo_errado.png) repeat-x;
+	border:1px solid #900;
+	z-index:1;
+	width:300px;
+	font-size:90%;
+}
+.imgMsg
+{
+	padding:5px;
+	float:left;
+	z-index:2;
+	line-height:40px;
+	vertical-align:middle;
+}

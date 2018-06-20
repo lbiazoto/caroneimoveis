@@ -1,0 +1,98 @@
+<?php
+if($modulo!="" && devolveUsuarioLogado() && $_SESSION['avisos'])
+{
+	include("func.php");
+
+	if($index == "")	$index = 0;
+	if($mark=="")		$mark = 1;
+
+	print("
+		<h1>
+			Avisos - Lista de Imóveis Exclusivos
+		</h1>
+	");
+
+	if($order=="dataCadastroASC") $orderCadastroASC="selected"; else $orderCadastroASC="";
+	if($order=="dataCadastroDESC") $orderCadastroDESC="selected"; else $orderCadastroDESC="";
+	if($order=="tituloASC") $orderTituloASC="selected"; else $orderTituloASC="";
+	if($order=="tituloDESC") $orderTituloDESC="selected"; else $orderTituloDESC="";
+	print("
+	<table align='center' width='100%' cellpadding='2' cellspacing='2'>
+		<tr>
+			<td align='center' valign='top'>
+				<form action='index.php?modulo=avisos&acao=exclusivos&tipo=listar' method='post'>
+					<fieldset>
+				    	<legend>Listar</legend>
+						<table align = 'center' border = '0' cellpadding='2' cellspacing='2'>
+							<tr>
+								<th align='left'>Ordenado por:</th>
+								<td align='left'>
+									<select name='order' id='order'>
+										<option value='dataCadastroASC' $orderCadastroASC>Data Exclusividade Crescente</option>
+										<option value='dataCadastroDESC' $orderCadastroDESC>Data Exclusividade Decrescente</option>
+										<option value='tituloASC' $orderTituloASC>Nome Crescente</option>
+										<option value='tituloDESC' $orderTituloDESC>Nome Decrescente</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th align='left'>Data de Exclusividade:</th>
+								<td align='left'>
+                                    <input style='width:100px;' name='dataIni' value='$dataIni' type='text' id='dataIni' tipo='numerico' mascara='##/##/####' onfocus='onChangeFocus(this);' onblur='onLostFocus(this);'>
+                                    à
+                                    <input style='width:100px;' name='dataFim' value='$dataFim' type='text' id='dataFim' tipo='numerico' mascara='##/##/####' onfocus='onChangeFocus(this);' onblur='onLostFocus(this);'>
+                                </td>
+							</tr>
+							<tr>
+								<th align='left'>Data de Aviso:</th>
+								<td align='left'>
+                                    <input style='width:100px;' name='dataIniAviso' value='$dataIniAviso' type='text' id='dataIniAviso' tipo='numerico' mascara='##/##/####' onfocus='onChangeFocus(this);' onblur='onLostFocus(this);'>
+                                    à
+                                    <input style='width:100px;' name='dataFimAviso' value='$dataFimAviso' type='text' id='dataFimAviso' tipo='numerico' mascara='##/##/####' onfocus='onChangeFocus(this);' onblur='onLostFocus(this);'>
+                                </td>
+							</tr>
+							<tr>
+								<td colspan='2' align='center'><input type='submit' id='form_submit' name='submitPesquisa' value='Pesquisar'></td>
+							</tr>
+						</table>
+					</fieldset>
+				</form>
+			</td>
+		</tr>
+	</table>
+	");
+
+	if($order=="") $order="dataCadastroASC";
+
+	$where="";
+	if($dataIni!=""){
+    	$where.=" AND dataTerminoExclusividade >= '".converteDataToMysql($dataIni)."' ";
+	}
+	if($dataFim!=""){
+		$where.=" AND dataTerminoExclusividade <= '".converteDataToMysql($dataFim)."' ";
+	}
+	if($dataIniAviso!=""){
+		$where.=" AND dataAviso >= '".converteDataToMysql($dataIniAviso)."' ";
+	}
+	if($dataFimAviso!=""){
+		$where.=" AND dataAviso <= '".converteDataToMysql($dataFimAviso)."' ";
+	}
+	if($order=="dataCadastroASC")	$orderBy="dataTerminoExclusividade ASC";
+	if($order=="dataCadastroDESC")	$orderBy="dataTerminoExclusividade DESC";
+	if($order=="tituloASC")	$orderBy="nome ASC";
+	if($order=="tituloDESC")	$orderBy="nome DESC";
+	devolveListaImoveisExclusivos($index, $mark, "WHERE deletado='0' AND exclusivo=1 $where ORDER BY $orderBy", "&dataFim=$dataFim&dataIni=$dataIni&order=$order&dataFimAviso=$dataFimAviso&dataIniAviso=$dataIniAviso");
+}
+else
+{
+	print("
+		<br><br>
+		<h1>
+			");
+			if(devolveUsuarioLogado())	devolveMensagem(NAO_AUTORIZADO, false);
+			print("
+		</h1>
+		<br><br>
+	");
+}
+?>

@@ -1,0 +1,450 @@
+html{background-color:#464646;}
+body{font-family:Verdana, Geneva, sans-serif; font-size:12px; color: #333; background-color:#464646;}
+table{font-size:12px;}
+input{padding:0px; margin:0px; border:1px solid #666; color:#000; background-color:#FFF;}
+textarea{padding:0px; margin:0px; border:1px solid #666; color:#000; background-color:#FFF;}
+a{color:#555; text-decoration:none;}
+a:hover{color:#555; text-decoration:underline;}
+img{border:none;}
+h1{color:#367C36; font-size:14px; padding:10px 10px 10px 30px; text-align:left; text-transform:uppercase; letter-spacing:1px;}
+.titulo_pagina{margin:10px;}
+/*NAVEGAÇÃO*/
+#paginacao {
+	width: auto;
+	height: auto;
+	text-align:right;
+	margin-right:20px;
+}
+#paginacao ul {
+	padding: 0px;
+}
+#paginacao li {
+	list-style-type: none;
+	padding: 3px;
+	text-align:center;
+	border:1px solid #CCC;
+	vertical-align:middle;
+	background: none;
+	display:inline;
+	font-weight:bold;
+	height:20px;
+	width:20px;
+}
+.titulo_noticia
+{
+	padding-top:20px;
+	font-size:130%;
+	color:#555;
+	letter-spacing:1px;
+	font-weight:bold;
+	margin:0px;
+}
+.data_noticia
+{
+	border-top:1px solid #555;
+	font-size:90%;
+	color:#90909F;
+	letter-spacing:2px;
+	margin:0px;
+	text-align:right;
+}
+
+#inputPesquisaHome
+{
+	height:30px;
+	line-height:30px;
+	padding:2px;
+	vertical-align:middle;
+	color:#555;
+	font-size:14px;
+	width:100%;
+}
+#selectPesquisaHome
+{
+	float:left;
+	height:35px;
+	width: 100%;
+	color:#555;
+	text-align:left;
+	font-size:17px;
+	line-height:35px;
+	vertical-align:middle;
+	padding:0px;
+	margin:0px;
+}
+.selectPesquisaHome
+{
+	float:left;
+	height:35px;
+	width: 100%;
+	color:#555;
+	text-align:left;
+	font-size:17px;
+	line-height:35px;
+	vertical-align:middle;
+	padding:0px;
+	margin:0px;
+}
+#submitPesquisaHome
+{
+	width:302px;
+	height:28px;
+	background:url(../images/botton_cinza_16.jpg) no-repeat;
+	border:none;
+	cursor:pointer;
+	cursor:hand;
+}
+#submitServicosHome
+{
+	width:302px;
+	height:28px;
+	background:url(../images/botton_cinza_18.jpg) no-repeat;
+	border:none;
+	cursor:pointer;
+	cursor:hand;
+}
+.thDetalhes
+{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:5px 5px 5px 10px;
+	color:#333;
+	background-color:#C3D88B;
+	text-align:left;
+}
+.tdDetalhes
+{
+	font-size:12px;
+	letter-spacing:1px;
+	padding:5px 5px 5px 30px;
+	color:#333;
+	background-color:#C3D88B;
+	text-align:left;
+}
+.opine
+{
+	color:#900;
+	font:Tahoma, Geneva, sans-serif;
+	letter-spacing:1px;
+	font-weight:bold;
+}
+.tituloServico
+{
+	color:#333;
+	font-size:16px;
+	letter-spacing:2px;
+	padding: 10px 10px 10px 30px;
+	font-weight:bold;
+}
+
+/**MENU HOME**/
+#barramenu ul
+{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+#barramenu li {
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+	text-align:center;
+	vertical-align:middle;
+}
+#barramenu li a {
+	text-decoration: none;
+}
+#barramenu li a:hover {
+	text-decoration: none;
+}
+
+ul.menubar ul.menu
+{
+	display: none;
+	position: absolute;
+}
+
+ul.menubar a{
+	padding:  0px;
+	margin: 0px;
+	display: block;
+}
+ul.menubar a: hover{
+	padding: 0px;
+	margin: 0px;
+	display:block;
+}
+ul.menubar a:visited{
+	padding: 0px;
+	margin: 0px;
+	display:block;
+}
+.submenu{
+	padding: 0px;
+	float:left;
+}
+ul.menu, ul.menu ul{
+	padding:  0px;
+	margin: 0px;
+	width:177px;
+}
+ul.menu li{
+	border-top:2px solid #90AE4E;
+	list-style: none;
+	margin:0px;
+	width:177px;
+}
+
+ul.menu li a {
+	border-top:2px solid #90AE4E;
+	text-decoration: none;
+	width:177px;
+	margin: 0px;
+}
+ul.menu li a:hover{
+	border-top:2px solid #90AE4E;
+	text-decoration: none;
+	width:177px;
+	margin: 0px;
+}
+ul.menu li a:visited{
+	border-top:2px solid #90AE4E;
+	text-decoration: none;
+	width:177px;
+	margin: 0px;
+}
+* html ul.menu li { float: left; height: 1%; }
+* html ul.menu li a { height: 1%; }
+ul.menu ul{
+	position: absolute;
+	display: block;
+}
+ul.menu li.submenu ul { display: none;}
+ul.menu li a:hover { color: #999999;}
+a.menuImoveis{
+	background: url('../images/index_07.jpg') no-repeat;
+	height:52px;
+	width:101px;
+	display:block;
+}
+a.menuImoveis:hover{
+	background: url('../images/menuover_07.jpg') no-repeat;
+	height:52px;
+	width:101px;
+}
+a.menuItemProduto{
+	background: url('../images/menu_auxilio_10.jpg') no-repeat;
+	height:52px;
+	width:178px;
+}
+a.menuItemProduto:hover{
+	background: url('../images/menuover_auxilio_10.jpg') no-repeat;
+	height:52px;
+	width:178px;
+}
+a.menuServicos{
+	background: url('../images/menu_down_13.jpg') no-repeat;
+	height:28px;
+	width:177px;
+}
+a.menuServicos:hover{
+	background: url('../images/menuover_down_13.jpg') no-repeat;
+	height:28px;
+	width:177px;
+}
+a.menuSimulacoes{
+	background: url('../images/menu_down_16.jpg') no-repeat;
+	height:28px;
+	width:177px;
+}
+a.menuSimulacoes:hover{
+	background: url('../images/menuover_down_16.jpg') no-repeat;
+	height:28px;
+	width:177px;
+}
+a.menuDicas{
+	background: url('../images/menu_down_20.jpg') no-repeat;
+	height:28px;
+	width:177px;
+}
+a.menuDicas:hover{
+	background: url('../images/menuover_down_20.jpg') no-repeat;
+	height:28px;
+	width:177px;
+}
+
+a.menuNosVoce{
+	background: url('../images/eu_mais_voce_20.jpg') no-repeat;
+	height:28px;
+	width:177px;
+}
+a.menuNosVoce:hover{
+	background: url('../images/eu_mais_voce_20.jpg') no-repeat;
+	height:28px;
+	width:177px;
+}
+/**/
+#barramenu2 ul
+{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+#barramenu2 li {
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+	text-align:center;
+	vertical-align:middle;
+}
+#barramenu2 li a {
+	text-decoration: none;
+}
+#barramenu2 li a:hover {
+	text-decoration: none;
+}
+
+ul.menubar2 ul.menu2
+{
+	display: none;
+	position: absolute;
+}
+
+ul.menubar2 a{
+	padding:  0px;
+	margin: 0px;
+	display: block;
+}
+ul.menubar2 a: hover{
+	padding: 0px;
+	margin: 0px;
+	display:block;
+}
+ul.menubar2 a:visited{
+	padding: 0px;
+	margin: 0px;
+	display:block;
+}
+.submenu2{
+	padding: 0px;
+	float:left;
+}
+ul.menu2, ul.menu2 ul{
+	padding:  0px;
+	margin: 0px;
+	width:101px;
+}
+ul.menu2 li{
+	list-style: none;
+	margin:0px;
+	width:101px;
+}
+
+ul.menu2 li a {
+	text-decoration: none;
+	width:101px;
+	margin: 0px;
+}
+ul.menu2 li a:hover{
+	text-decoration: none;
+	width:101px;
+	margin: 0px;
+}
+ul.menu2 li a:visited{
+	text-decoration: none;
+	width:101px;
+	margin: 0px;
+}
+
+* html ul.menu2 li { float: left; height: 1%; }
+* html ul.menu2 li a { height: 1%; }
+
+ul.menu2 ul{
+	position: absolute;
+	display: block;
+}
+
+ul.menu2 li.submenu2 ul { display: none;}
+
+ul.menu2 li a:hover { color: #999999;}
+
+/* home */
+#formBuscaImoveis{width:905px; margin:10px; padding:0; background:#d7d7d7; float:left;}
+#formBuscaImoveis span{float:left; margin:0; line-height:20px;}
+#formBuscaImoveis label{float:left; margin:3px 6px; padding:0; line-height:20px;}
+#formBuscaImoveis select{width:150px; margin:0; float:left;}
+#formBuscaImoveis #tipoImovel{margin:0; float:left; background:none; border:none; line-height:20px;}
+#formBuscaImoveis input[type=text]{width:100px; float:left;}
+#formBuscaImoveis #submitBusca{width:79px; height:42px; background:url(../images/btn_buscar.jpg) top center no-repeat; border:none; float:left; cursor:pointer; display:block;}
+#formBuscaImoveis #submitBusca:hover{width:79px; height:42px; background:url(../images/btn_buscar_hover.jpg) top center no-repeat; border:none; float:left; cursor:pointer; display:block;}
+
+#box_destaque_home{width:716px; height:261px; background:url(../images/imovel_destaque.jpg) top center no-repeat; float:left; margin:0 100px;}
+#box_destaque_home #imagem{width:320px; height:227px; float:left; margin:33px 0 0 20px; text-align:left;}
+#box_destaque_home #imagem img{max-width:320px; max-height:227px;}
+#box_destaque_home #bairro{width:320px; height:22px; float:left; margin:45px 0 0 55px;}
+#box_destaque_home #bairro a{color:#fff; font-size:16px; line-height:22px; font-weight:lighter;}
+#box_destaque_home #descricao{width:330px; height:150px; float:left; margin:10px 0 0 25px; line-height:20px;}
+#box_destaque_home #valor{width:330px; height:20px; float:left; margin:5px 0 0 25px;}
+#box_destaque_home #valor a{color:#92ad4b; font-size:26px; line-height:22px; font-weight:lighter;}
+
+#imoveis_home{width:800px; border:1px solid #92ad4b; margin:20px 50px; float:left;}
+#box_imovel_home{width:265px; float:left; margin:0; font-size:14px;}
+#box_imovel_home #imagem{width:255px; height:180px; float:left; margin:5px; text-align:center;}
+#box_imovel_home #local{width:235px; float:left; margin:0 15px; text-align:center; font-weight:bold;}
+#box_imovel_home #valor{width:235px; float:left; margin:5px 15px; text-align:center; font-weight:bold;}
+#box_imovel_home #valor a{color:#92ad4b;}
+
+
+#formNewsletter{width:280px; float:left; margin:10px 10px 14px 80px; color:#999;}
+#formNewsletter label{width:100%; margin:3px 0; float:left;}
+#formNewsletter label span{width:50px; float:left;}
+#formNewsletter label input[type=text]{width:150px; height:17px; background:#fff; border:none; float:left;}
+#formNewsletter input[type=submit]{width:46px; height:16px; background:url(../images/btn_enviar.jpg) top center no-repeat; border:none; float:left; cursor:pointer; margin-left:3px;}
+#formNewsletter input[type=submit]:hover{width:46px; height:16px; background:url(../images/btn_enviar_hover.jpg) top center no-repeat; border:none; float:left; cursor:pointer; margin-left:3px;}
+
+#detalhes{width:95%; float:left; margin:5px auto;}
+#detalhes h2{margin:15px 0; float:left;}
+#detalhes span{margin:0; float:left;}
+#detalhes .referencia{font-size:15pt; margin:0;}
+#detalhes .valorImovel{font-size:15pt; margin:0; float:left; margin-left:70px; margin-top:-7px;}
+
+#formPesquisa{width:820px; margin:20px 40px; float:left; background:#efefef; border:1px solid #ccc; padding:10px;}
+#formPesquisa #filtros{width:450px; float:left; min-height:200px;}
+#formPesquisa #filtros label{width:450px; margin:10px 0; float:left;}
+#formPesquisa #filtroComposicao{width:300px; float:left; min-height:200px; margin-top:8px;}
+#formPesquisa label span.filtro{float:left; line-height:25px; margin:0; width:100px; font-size:12pt;}
+#formPesquisa label span.valor{float:left; line-height:25px; margin:0; max-width:250px;}
+#formPesquisa input[type=text]{height:25px;}
+#formPesquisa select{height:25px;}
+#formPesquisa #submitPesquisa{cursor:pointer; padding:10px 20px;}
+
+#filtros{width:900px; float:left; line-height:30px; margin:10px; clear:both;}
+#filtros a{color:#6f6f6f;}
+#filtros #breadcrumb a:hover{color:#93AD4A;}
+#filtros a.filtroOver{background-color:#93AD4A; color:#fff; padding:2px;}
+#filtros h2{color:#6d8436; font-size:12px; font-weight:bold; margin:0; padding:0 5px 0 0; float:left;}
+#filtros #classificacao{width:450px; float:left; margin:0;}
+#filtros #resultados{width:450px; float:left; margin:0; text-align:right;}
+#lista_produtos{width:590px; float:left; line-height:30px; margin:10px 10px 10px 0;}
+
+#navegacao{width:100%; margin:3px 10px 3px 0; text-align:center; float:left;}
+#navegacao ul{margin:0 auto; text-align:center; padding:0; height:25px;}
+#navegacao ul li{list-style-type:none; display:block; width:25px; height:25px; line-height:20px; float:left; }
+#navegacao ul li a{color:#6f6f6f; background-color:#93AD4A; padding:2px 5px;}
+#navegacao ul li#over{list-style-type:none; display:inline;}
+#navegacao ul li#over a{color:#fff; background-color:#6d8436; padding:2px 5px;}
+#total_encontrado{width:100%; margin:10px 0; float:left; text-align:center;}
+#lateral{width:150px; float:left; margin:0;}
+
+#linkRedesSociais{padding:0; margin:0; margin:0 40px; float:left;}
+#linkRedesSociais li{width:33px; height:33px; display:block; float:left; margin:0 10px;}
+#linkRedesSociais li a{width:33px; height:33px; display:block; float:left; margin:0 10px;}
+#linkRedesSociais li a.linkFacebook{background:url(../images/icon_facebook.jpg) top center no-repeat;}
+#linkRedesSociais li a.linkFacebook:hover{background:url(../images/icon_facebook_over.jpg) top center no-repeat;}
+#linkRedesSociais li a.linkTwitter{background:url(../images/icon_twitter.jpg) top center no-repeat;}
+#linkRedesSociais li a.linkTwitter:hover{background:url(../images/icon_twitter_over.jpg) top center no-repeat;}
+#linkRedesSociais li a.linkOrkut{background:url(../images/icon_orkut.jpg) top center no-repeat;}
+#linkRedesSociais li a.linkOrkut:hover{background:url(../images/icon_orkut_over.jpg) top center no-repeat;}
+
+#highslide-gallery a{height:150px; width:150px; background:#ccc;}
+#highslide-gallery a img{border:1px solid #93AD4A;}

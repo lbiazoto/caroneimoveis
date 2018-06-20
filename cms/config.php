@@ -1,0 +1,31 @@
+<?php
+// Arquivo de configuraçao do Sistema.
+$servidor = "mysql.caroneimoveis.com.br";			// Servidor que contém o Banco de Dados MySQL.
+$bancoDados = "caroneimoveis";	// Banco de Dados que será utilizado.
+$usuarioBd = "caroneimoveis";			// Usuário com acesso ao Banco de Dados.
+$senhaBd = "carone123";				// Senha para o usuário fornecido.
+$corFundoAmareloEscuro = "#FFFF99";
+$corFundoAmareloClaro = "#FFFFCC";
+$corFundoBranco = "#FFFFFF";
+
+//Debug
+$debugModeOn = false;
+
+// Expiração de sessão
+$minutosExpirarSessao = 0; // para nunca expirar utilize 0
+
+//Dominios
+$enderecoCompleto = "http://caroneimoveis.com.br";
+
+//Emails
+$smtp_email_padrao="smtp.caroneimoveis.com.br";
+$endereco_email_padrao = "site@caroneimoveis.com.br";
+$nome_email_padrao = "Equipe Carone Imóveis";
+$endereco_email_destino = "contato@caroneimoveis.com.br";
+//$endereco_email_destino = "deivid@betag.com.br";
+$senha_email_padrao = "site09*";
+
+// define com mensagem para erro para usuários que não possuem acesso a parte do sistema
+define("NAO_AUTORIZADO","Desculpe, você não está autorizado a acessar essa parte do sistema!");
+define("ID_ACESSO","betag2010$enderecoCompleto");
+?>

@@ -1,0 +1,2 @@
+Jan 10 16:47:14 src@mx2 postfix/smtp[26539]: E9A1B95ADB490: to=<contato@caroneimoveis.com.br>, relay=10.5.3.94[10.5.3.94]:25, delay=1.4, delays=1.4/0/0/0, dsn=2.0.0, status=sent (250 2.0.0 Ok: queued as 7CD5F98A0978)
+Jan 13 19:17:48 src@mx2 postfix/smtp[5492]: E222D9B568FD0: to=<contato@caroneimoveis.com.br>, relay=10.5.3.94[10.5.3.94]:25, delay=15, delays=15/0/0/0.04, dsn=2.0.0, status=sent (250 2.0.0 Ok: queued as 8AE891964324)

@@ -1,0 +1,3 @@
+Jan  9 15:51:39 src@mx1 postfix/smtp[3013]: 0B933F3DC27F4: to=<contato@caroneimoveis.com.br>, relay=10.5.3.94[10.5.3.94]:25, delay=1.8, delays=1.8/0.01/0/0, dsn=2.0.0, status=sent (250 2.0.0 Ok: queued as E18298D18B77)
+Jan 13 12:04:06 src@mx1 postfix/smtp[21346]: F292BFBE62FCC: to=<contato@caroneimoveis.com.br>, relay=10.5.3.94[10.5.3.94]:25, delay=2.3, delays=2.3/0/0/0.05, dsn=2.0.0, status=sent (250 2.0.0 Ok: queued as B2612F260F0)
+Jan 15 18:52:12 src@mx1 postfix/smtp[17841]: C4E3FAF7B34: to=<contato@caroneimoveis.com.br>, relay=10.5.3.94[10.5.3.94]:25, delay=52, delays=52/0/0/0.18, dsn=2.0.0, status=sent (250 2.0.0 Ok: queued as 4A7D75A5D673)
