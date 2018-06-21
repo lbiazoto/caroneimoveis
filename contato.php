@@ -16,10 +16,10 @@
 					<td colspan="2" align="left"><strong style="line-height:20px; letter-spacing:1px; font-size:100%; text-align:left;">Carone - Corretora de Im&oacute;veis</strong></td>
 				</tr>
 				<tr>
-					<td colspan="2" align="left">Rua Dr. João Colin, 1285 - Sala 03 - Esquina com Rua Araranguá</td>
+					<td colspan="2" align="left">Rua Dr. Joï¿½o Colin, 1285 - Sala 03 - Esquina com Rua Araranguï¿½</td>
 				</tr>
 				<tr>
-                    <td colspan="2" align="left">América - 89204-001</td>
+                    <td colspan="2" align="left">Amï¿½rica - 89204-001</td>
                 </tr>
 				<tr>
 					<td colspan="2" align="left">Joinville - SC</td>
@@ -61,7 +61,7 @@
 					<td align="left">&nbsp;</td>
 				</tr>
 				<tr>
-					<td align="left" style="padding-left:25px;">47 99182-7476</td>
+					<td align="left" style="padding-left:25px;">47 99632-4118</td>
 				</tr>
 				<tr>
 					<td align="left">&nbsp;</td>
@@ -80,13 +80,13 @@
 						/*
 						$texto = "Nome: $_POST[nome]\nE-mail: $_POST[email]\nTelefone: $_POST[telefone]\nMensagem: $_POST[mensagem]";
 						$from = "From: $_POST[email]";
-						mail("contato@caroneimoveis.com.br","Contato através do site - $_POST[assunto]",$texto, $from);
+						mail("contato@caroneimoveis.com.br","Contato atravï¿½s do site - $_POST[assunto]",$texto, $from);
 						*/
 						$_POST[mensagem]=nl2br($_POST[mensagem]);
 						$msgFinal = "
 							<table align='left' cellpadding='3' cellspacing='3'>
 								<tr bgcolor='#464646'>
-									<th colspan='2' style='color:#93AD4C;'>Contato através do site - $_POST[assunto]</th>
+									<th colspan='2' style='color:#93AD4C;'>Contato atravï¿½s do site - $_POST[assunto]</th>
 								</tr>
 								<tr>
 									<th align='left' bgcolor='#EFEFEF'>Nome:</th>
@@ -109,8 +109,8 @@
 						$fromMail = "$_POST[email]";
 						$fromNome = "$_POST[nome]";
 						include("cms/config.php");
-						sendMail($endereco_email_destino, $nome_email_padrao, $endereco_email_padrao, "Carone Imóveis", "Contato através do site - $_POST[assunto]", $msgFinal);
-						mensagemRetorno("Seu formulário foi enviado com sucesso! <br> Estaremos entrando em contato o mais breve possível!", "");
+						sendMail($endereco_email_destino, $nome_email_padrao, $endereco_email_padrao, "Carone Imï¿½veis", "Contato atravï¿½s do site - $_POST[assunto]", $msgFinal);
+						mensagemRetorno("Seu formulï¿½rio foi enviado com sucesso! <br> Estaremos entrando em contato o mais breve possï¿½vel!", "");
 					}
 				}
 			?>
